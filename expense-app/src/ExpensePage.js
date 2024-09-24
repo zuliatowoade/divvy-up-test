@@ -3,6 +3,8 @@ import axios from 'axios';
 import './ExpensePage.css';
 import useFriendsList from './useFriendsList';
 import { userAll } from './useFriendsList';
+import LogoutButton from './LogoutButton';
+
 
 const ExpensePage = ( ) => {
     // Hardcoded list of friends for now
@@ -168,7 +170,7 @@ const ExpensePage = ( ) => {
                     />
                 </div>
                 <button type="submit" className="submit-btn">Add Expense</button>
-                {/* <LogoutButton/> */}
+                <LogoutButton/>
             </form>
         </div>
     );
